@@ -10,8 +10,8 @@
     <tbody>
         <tr *ngFor="let employee of employeeList">
             <td>{{employee.EmployeeId}}</td>
-            <td>{{employee.Name}}</td>
-            <td>{{employee.Gender}}</td>
+            <td>{{employee.Name | uppercase}}</td>
+            <td>{{employee.Gender | lowercase}}</td>
             <td>{{employee.Salary}}</td>
         </tr>
     </tbody>
