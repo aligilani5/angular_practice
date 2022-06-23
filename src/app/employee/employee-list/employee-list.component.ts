@@ -7,7 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeeListComponent implements OnInit {
 
-  constructor() { }
+  public employeeList: any[];
+
+  constructor() { 
+
+    this.employeeList = [
+      {EmployeeId: 151, Name: 'Shahid', Gender: 'Male', Salary: 15000},
+      {EmployeeId: 152, Name: 'Mudassar', Gender: 'Male', Salary: 20000},
+      {EmployeeId: 153, Name: 'Qasim', Gender: 'Male', Salary: 12000},
+      {EmployeeId: 154, Name: 'Hamid', Gender: 'Male', Salary: 17000},
+      {EmployeeId: 155, Name: 'Waseem', Gender: 'Male', Salary: 15000},
+    ];
+  }
 
   ngOnInit(): void {
   }
