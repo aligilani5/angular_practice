@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmployeeList } from '../interfaces/employee';
 
 @Component({
   selector: 'app-employee-list',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeeListComponent implements OnInit {
 
-  public employeeList: any[];
+  public employeeList: EmployeeList[];
 
   constructor() { 
 
