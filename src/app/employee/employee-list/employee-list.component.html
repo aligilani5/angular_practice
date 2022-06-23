@@ -1,3 +1,6 @@
+<app-employee-count [all]="getAllEmployees()" [male]="getMaleEmployees()"
+    [female] = "getFemaleEmployees()"
+    (radioButtonValueChange) = "onEventRadioValueChange($event)"></app-employee-count>
 <table>
     <thead>
         <tr>
@@ -8,11 +11,14 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let employee of employeeList">
-            <td>{{employee.EmployeeId}}</td>
-            <td>{{employee.Name | uppercase}}</td>
-            <td>{{employee.Gender | lowercase}}</td>
-            <td>{{employee.Salary}}</td>
-        </tr>
+        <ng-container *ngFor="let employee of employeeList">
+            <tr *ngIf = "selectedEmployee == 'All' || selectedEmployee == employee.Gender">
+                <td>{{employee.EmployeeId}}</td>
+                <td>{{employee.Name | uppercase}}</td>
+                <td>{{employee.Gender | lowercase}}</td>
+                <td>{{employee.Salary}}</td>
+            </tr>
+        </ng-container>
+        
     </tbody>
 </table>

@@ -1,1 +1,14 @@
-<p>employee-count works!</p>
+<div>
+    <span>Select: </span>
+    <input type="radio" value = "All" [(ngModel)]="selectedRadioButtonValue" 
+    (change)="onRadioButtonValueChange()">
+    <span>{{"All("+ all +")"}}</span>
+    &nbsp;
+    <input type="radio" value = "Male" [(ngModel)]="selectedRadioButtonValue"
+    (change)="onRadioButtonValueChange()">
+    <span>{{"Male("+ male +")"}}</span>
+    &nbsp;
+    <input type="radio" value = "Female" [(ngModel)]="selectedRadioButtonValue"
+    (change)="onRadioButtonValueChange()">
+    <span>{{"Female("+ female +")"}}</span>
+</div>

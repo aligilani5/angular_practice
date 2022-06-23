@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { RouterModule, Routes } from '@angular/router';
 import { EmployeeCountComponent } from './employee-count/employee-count.component';
+import { FormsModule } from '@angular/forms';
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    FormsModule
   ],
   exports: [RouterModule]
 })
