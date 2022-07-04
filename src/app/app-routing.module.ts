@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: 'getEmployeeList',
     loadChildren: () => import('./employee/employee.module').then(m => m.EmployeeModule)
+  },
+  {
+    path: '',
+    loadChildren: () => import('./landing-page/landing-page.module').then(m => m.LandingPageModule)
   }
 ];
 
