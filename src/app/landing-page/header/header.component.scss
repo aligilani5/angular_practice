@@ -45,7 +45,33 @@
     font-style: italic;
     margin-top: 10px;
 }
-.card-width{
-    max-width: 300px;
+
+.card-row {
+    padding: 2%;
+}
+
+.card-width {
+    max-width: 280px;
     margin-left: 20px;
+}
+
+.card-width:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 40px gray;
+}
+
+.related_news{
+    text-align: center;
+    color: rgb(104, 104, 199);
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(104, 104, 199);
+    color: white;
+    font-style: italic;
 }

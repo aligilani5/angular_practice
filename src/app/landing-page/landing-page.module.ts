@@ -9,6 +9,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatRippleModule} from '@angular/material/core';
 import {MatCardModule} from '@angular/material/card';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 const routes: Routes = [
 
@@ -28,7 +29,8 @@ const routes: Routes = [
     MatInputModule,
     MatButtonModule,
     MatRippleModule,
-    MatCardModule
+    MatCardModule,
+    FlexLayoutModule
   ]
 })
 export class LandingPageModule { }
