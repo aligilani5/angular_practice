@@ -1,0 +1,53 @@
+.subscription {
+    color: rgba(255, 191, 0, 0.896);
+    padding: 230px;
+    font-weight: bold;
+    font-size: large;
+    background-color: rgba(67, 101, 156, 0.583);
+
+}
+
+.bg-image {
+    background-image: url('../../../../src/assets/mcg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 520px;
+    background-position: center center fixed;
+    background-attachment: fixed;
+}
+
+.newsLetter_input {
+    border: none;
+    border-radius: 25px;
+    height: 25px;
+}
+
+.latest {
+    text-align: center;
+    color: rgb(104, 104, 199);
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.card-row {
+    padding: 2%;
+}
+
+.card-width {
+    max-width: 280px;
+    margin-left: 20px;
+}
+
+.card-width:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 40px gray;
+}
+
+.related_news{
+    text-align: center;
+    color: rgb(104, 104, 199);
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+}

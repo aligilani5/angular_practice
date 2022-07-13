@@ -13,7 +13,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 const routes: Routes = [
 
-  { path: '', component: HeaderComponent, pathMatch: 'full'}
+  { path: '', component: HomeComponent, pathMatch: 'full'}
 ];
 
 @NgModule({
