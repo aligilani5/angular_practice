@@ -2,18 +2,27 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "title": "International Cricket",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Id culpa laboriosam odit eaque officia",
+      "image": "mcg.jpg"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "title": "Asia Cup 2022",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Id culpa laboriosam odit eaque officia",
+      "image": "mcg.jpg"
+    },
+    {
+      "id": 3,
+      "title": "ICC World Cup",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Id culpa laboriosam odit eaque officia",
+      "image": "mcg.jpg"
+    },
+    {
+      "id": 4,
+      "title": "ICC WT20 Cup 2022",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Id culpa laboriosam odit eaque officia",
+      "image": "mcg.jpg"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
