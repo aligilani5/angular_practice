@@ -10,9 +10,10 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatRippleModule} from '@angular/material/core';
 import {MatCardModule} from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { PostDescriptionComponent } from './post-description/post-description.component';
 
 const routes: Routes = [
-
+  { path: 'post/:id', component: PostDescriptionComponent, pathMatch: 'full'},
   { path: '', component: HomeComponent, pathMatch: 'full'}
 ];
 
@@ -20,7 +21,8 @@ const routes: Routes = [
   declarations: [
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    PostDescriptionComponent
   ],
   imports: [
     CommonModule,

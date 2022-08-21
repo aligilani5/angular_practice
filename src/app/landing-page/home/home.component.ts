@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Post } from '../models/posts.model';
 import { PostsService } from '../services/posts.service';
 
@@ -10,7 +11,10 @@ import { PostsService } from '../services/posts.service';
 export class HomeComponent implements OnInit {
 
   public posts: Post[] = [];
-  constructor(private _postService: PostsService) { }
+  constructor(
+    private _postService: PostsService,
+    private _route: Router
+  ) { }
 
   ngOnInit(): void {
 
@@ -18,9 +22,14 @@ export class HomeComponent implements OnInit {
   }
 
   private getAllPosts() {
-    
+
     this._postService.getPosts().subscribe(data => {
       this.posts = data;
-    })
+    });
+  }
+
+  public getPostById(id: number) {
+    
+    this._route.navigate(['/post', id]);
   }
 }

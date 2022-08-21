@@ -13,4 +13,9 @@ export class PostsService {
   getPosts(): Observable<Post[]> {
     return this._http.get<Post[]>('http://localhost:3000/posts');
   }
+
+  getPostById(id: number): Observable<Post>{
+    return this._http.get<Post>(`http://localhost:3000/posts/${id}`);
+  }
+  
 }
