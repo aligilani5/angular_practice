@@ -8,7 +8,7 @@
 }
 
 .bg-image {
-    background-image: url('../../../../src/assets/mcg.jpg');
+    background-image: url('../../../assets/mcg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 520px;
@@ -31,12 +31,11 @@
 }
 
 .card-row {
-    padding: 2%;
+    margin-top: 3%;
 }
 
 .card-width {
     max-width: 280px;
-    margin-left: 20px;
 }
 
 .card-width:hover {
@@ -49,5 +48,5 @@
     color: rgb(104, 104, 199);
     font-weight: bold;
     font-style: italic;
-    margin-top: 10px;
+    margin-top: 18px;
 }
