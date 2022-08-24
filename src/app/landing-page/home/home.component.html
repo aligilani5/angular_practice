@@ -1,14 +1,5 @@
 <app-header></app-header>
 
-<div class="bg-image">
-    <div class="subscription">
-        <h3>Subscribe To Our NewsLetter !</h3>
-        <input type="text" class="newsLetter_input" placeholder="   Your Email...">
-        &nbsp;
-        <button mat-raised-button color="warn">Subscribe</button>
-    </div>
-</div>
-
 <h3 class="latest">Latest</h3>
 <div fxLayout="row" fxLayoutAlign = "center center" fxLayoutGap = "12" class="card-row">
     <mat-card class="card-width" *ngFor = "let post of posts">

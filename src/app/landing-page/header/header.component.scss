@@ -13,3 +13,26 @@
 .logo h3 {
     padding: 20px;
 }
+.subscription {
+    color: rgba(255, 191, 0, 0.896);
+    padding: 230px;
+    font-weight: bold;
+    font-size: large;
+    background-color: rgba(67, 101, 156, 0.583);
+
+}
+
+.bg-image {
+    background-image: url('../../../assets/mcg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 520px;
+    background-position: center center fixed;
+    background-attachment: fixed;
+}
+
+.newsLetter_input {
+    border: none;
+    border-radius: 25px;
+    height: 25px;
+}

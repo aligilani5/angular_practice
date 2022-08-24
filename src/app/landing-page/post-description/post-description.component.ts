@@ -27,6 +27,7 @@ export class PostDescriptionComponent implements OnInit {
       
       this.postById.title = post.title;
       this.postById.description = post.description;
+      this.postById.image = post.image;
     })
   }
 

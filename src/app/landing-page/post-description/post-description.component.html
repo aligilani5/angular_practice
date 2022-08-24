@@ -1,12 +1,27 @@
-<div fxLayout = "row" fxLayoutAlign = "center center">
-    <div fxLayout = "column">
-        <div>
-            Title : {{postById.title}}
-        </div>
-        <br>
-        <br>
-        <div>
-            Description : {{postById.description}}
-        </div>
+<app-header></app-header>
+
+
+<div fxLayout="row wrap" fxLayoutAlign = "space around" style="margin-left: 15px;">
+    <div class="title-image">
+        <img src="../../../assets/{{postById.image}}" class="post-image">
+    </div>
+    &nbsp;
+    &nbsp;
+    <div class="post-title">
+        {{postById.title}}
     </div>
 </div>
+
+<div fxLayout="column" fxLayoutAlign="center center">
+
+    <div>
+        <br>
+        <br>
+        <div class="post-description">
+            {{postById.description}}
+        </div>
+    </div>
+
+</div>
+
+<app-footer></app-footer>
