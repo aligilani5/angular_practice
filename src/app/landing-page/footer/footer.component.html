@@ -1,7 +1,28 @@
 <div class="footer">
     <div fxLayout="row" fxLayoutAlign="space-around center">
-        <h3>Cric News</h3>
-        <h3>Latest News</h3>
-        <h3>Related News</h3>
+        <div class="mb-45">
+            <h4>Cric News</h4>
+            <p class="about">Providing cricket related updates</p>
+        </div>
+        <div class="mr-55">
+            <h4>Latest News</h4>
+            <ng-container *ngIf = "posts != null && posts.length > 0">
+                <ng-container *ngFor = "let post of posts">
+                    <p>{{post.title}}</p>
+                </ng-container>
+            </ng-container>
+        </div>
+        <div>
+            <h4>Related News</h4>
+            <ng-container *ngIf = "posts != null && posts.length > 0">
+                <ng-container *ngFor = "let post of posts">
+                    <p>{{post.title}}</p>
+                </ng-container>
+            </ng-container>
+        </div>
+    </div>
+    <div fxLayout = "row" fxLayoutAlign = "center center" class="mt">
+        
+       Cric News &copy; 2022 - {{currentYear}}
     </div>
 </div>

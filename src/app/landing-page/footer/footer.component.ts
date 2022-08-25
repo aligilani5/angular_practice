@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Post } from '../models/posts.model';
+import { PostsService } from '../services/posts.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  public posts: Post[] = [];
+  public currentYear = new Date().getFullYear();
+  constructor(
+    private _postService: PostsService
+  ) { }
 
   ngOnInit(): void {
+    
+   this.getPosts();
+  }
+
+  private getPosts(): void {
+    this._postService.getPosts().subscribe(data => {
+      this.posts = data;
+    });
   }
 
 }
