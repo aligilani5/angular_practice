@@ -13,7 +13,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { PostDescriptionComponent } from './post-description/post-description.component';
 
 const routes: Routes = [
-  { path: 'post/:id', component: PostDescriptionComponent, pathMatch: 'full'},
+  { path: 'post/:id', component: PostDescriptionComponent},
   { path: '', component: HomeComponent, pathMatch: 'full'}
 ];
 

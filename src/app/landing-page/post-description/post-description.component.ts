@@ -12,7 +12,7 @@ import { PostsService } from '../services/posts.service';
 export class PostDescriptionComponent implements OnInit {
 
   private id!: number;
-  public postById: Post = new Post();
+  public postById!: Post;
 
   constructor(
     private _routeParam: ActivatedRoute,
@@ -21,14 +21,15 @@ export class PostDescriptionComponent implements OnInit {
 
   ngOnInit(): void {
 
-    const id = Number(this._routeParam.snapshot.paramMap.get('id'));
+    this.getPostById();
+  }
+
+  private getPostById(): void {
+    let id = Number(this._routeParam.snapshot.paramMap.get('id'));
     
     this._postService.getPostById(id).subscribe(post => {
-      
-      this.postById.title = post.title;
-      this.postById.description = post.description;
-      this.postById.image = post.image;
-    })
+      this.postById = post;
+    });
   }
 
 }
